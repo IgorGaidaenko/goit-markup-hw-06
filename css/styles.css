@@ -138,7 +138,7 @@ height: 4px;
     display: flex;
     justify-content: space-between;
     width: 1158px;
-  }
+    align-items: center;}
   
   .address-mail {
     font-weight: 400;
@@ -150,12 +150,10 @@ height: 4px;
   }
 
   .address-mail:hover {
-    color: #404bbf;
-  }
+    color: #404bbf;}
   
   .address-mail:focus {
-    color: #404bbf;
-  }
+    color: #404bbf;}
   
   
 
@@ -173,7 +171,13 @@ height: 4px;
 
   .section-one {
     padding: 188px 0;
-    background: #2e2f42;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)), url(../images/hands.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1400px;
     height: 600px;
   }
   
