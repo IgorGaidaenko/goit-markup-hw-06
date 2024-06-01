@@ -488,11 +488,11 @@ border-radius: 50%;
     display: flex;
     align-items: baseline;
     justify-content: flex-start;
-    margin-bottom: 16px;
+    
   }
   .footer_first_box {
     margin-right: 120px;
-    margin-bottom: 16px;
+    
   }
   .logo-end {
     display: inline-block;
@@ -525,6 +525,7 @@ border-radius: 50%;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
+    margin-bottom: 16px;
     
   }
   .footer_block {
@@ -532,6 +533,7 @@ border-radius: 50%;
     justify-content: center;
     align-items: center;
     gap: 16px;
+    margin-bottom: 16px;
   }
   .footer_link {
     display: flex;
