@@ -492,6 +492,8 @@ border-radius: 50%;
   }
   .footer_first_box {
     margin-right: 120px;
+    display: flex;
+    flex-direction: column;
     
   }
   .logo-end {
