@@ -511,6 +511,8 @@ border-radius: 50%;
     letter-spacing: 0.02em;
     color: #f4f4fd;
     width: 264px;
+    margin-bottom: 16px;
+
   }
   .footer_text {
     font-weight: 500;
