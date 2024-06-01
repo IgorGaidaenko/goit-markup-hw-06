@@ -519,15 +519,15 @@ border-radius: 50%;
   }
 
   .footer_text {
-    margin-bottom: 16px;
-    font-weight: 500;
+        font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #fff;
+    color: #FFFFFF;
     margin-bottom: 16px;
-    
-  }
+    }
+
+
   .footer_block {
     display: flex;
     justify-content: center;
