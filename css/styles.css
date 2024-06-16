@@ -8,38 +8,16 @@ body {
     text-decoration: none;
   }
   
-  ul a {
-    color: #434455;
-    font-style: normal;
+  a {
+    text-decoration: none;
   }
+  ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
   
-  ul {
-    list-style: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-  }
-  
- 
-  .container {
-    max-width: 320px;
-    padding: 0 16px;
-    margin: 0 auto;
-  }
-  
-  @media screen and (min-width: 768px) {
-    .container {
-      max-width: 768px;
-    }
-  }
-  
-  @media screen and (min-width: 1158px) {
-    .container {
-      max-width: 1158px;
-      padding: 0 15px;
-    }
-  }
-
   img {
     display: block;
   }
@@ -59,6 +37,28 @@ body {
     margin: 0;
   }
 
+ 
+  .container {
+    max-width: 320px;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+  
+  @media screen and (min-width: 1158px) {
+    .container {
+      max-width: 1158px;
+      padding: 0 15px;
+    }
+    
+  }
+
+
 
   /* header */
 
@@ -69,6 +69,7 @@ body {
   .header-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   
   .logo {
@@ -86,7 +87,12 @@ body {
   .logo-web {
     color: #2e2f42;
   }
-  
+
+  .heder-address {
+    font-style: normal;
+    margin-left: auto;
+    display: none;
+  }
   .logomain {
     display: flex;
     align-items: center;
@@ -96,76 +102,16 @@ body {
     display: none;
       }
   
-  .link-bar {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    padding: 24px 0;
-    display: block;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
   
-.current {
-position: relative;
-color: #404BBF;
-}
-
-.current::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  background-color: #404BBF;
-border-radius: 2px;
-width: 100%;
-height: 4px;
-
-}
-
-  .link-bar:hover {
-    color: #404bbf;
-  }
-  
-  .link-bar:focus {
-    color: #404bbf;
-  }
-  
-  .heder-address {
-    font-style: normal;
-    margin-left: auto;
-    display: none;
-  }
-  
-  .list-address {
-    display: flex;
-    gap: 40px;
-  }
+ 
   
   .header-container {
     display: flex;
     justify-content: space-between;
-    width: 1158px;
     align-items: center;
   }
   
-  .address-mail {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
 
-  .address-mail:hover {
-    color: #404bbf;}
-  
-  .address-mail:focus {
-    color: #404bbf;}
-  
-  
     .open-menu-btn {
       padding: 0;
       line-height: 0;
@@ -174,8 +120,92 @@ height: 4px;
       border: none;
     }
 
+   
+    @media screen and (min-width: 768px) {
+      
+      .open-menu-btn {
+        display: none;
+      }
+     
+      .logo {
+        margin-right: 120px;
+      }
 
+      .main {
+        display: flex;
+        gap: 40px;
+      }
 
+      .link-bar {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        padding: 24px 0;
+        display: block;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      
+    .current {
+    position: relative;
+    color: #404BBF;
+    }
+    
+    .current::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      background-color: #404BBF;
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+        }
+    
+      .link-bar:hover {
+        color: #404bbf;
+      }
+      
+      .link-bar:focus {
+        color: #404bbf;
+      }
+      .heder-address {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .address-mail {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+        color: #434455;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    
+      .address-mail:hover {
+        color: #404bbf;}
+      
+      .address-mail:focus {
+        color: #404bbf;}
+    }
+
+    @media screen and (min-width: 1158px) {
+      .logo {
+      margin-right: 76px;
+      }
+      .list-address {
+        flex-direction: row;
+        gap: 40px;
+      }
+        .address-mail {
+          font-size: 16px;
+          line-height: 1.5;
+        }
+        
+      }
 
 
   
