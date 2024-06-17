@@ -55,14 +55,11 @@ ol {
       max-width: 1158px;
       padding: 0 15px;
     }
-    
-  }
+    }
 
 
 
   /* header */
-
-
   .header {
     border-bottom: 1px solid #e7e9fc;}
   
@@ -133,7 +130,8 @@ ol {
 
       .main {
         display: flex;
-        gap: 40px;
+        gap: 12px;
+
       }
 
       .link-bar {
@@ -190,6 +188,14 @@ ol {
       
       .address-mail:focus {
         color: #404bbf;}
+
+        .list-address {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+        }
+
+
     }
 
     @media screen and (min-width: 1158px) {
@@ -197,6 +203,7 @@ ol {
       margin-right: 76px;
       }
       .list-address {
+        display: flex;
         flex-direction: row;
         gap: 40px;
       }
